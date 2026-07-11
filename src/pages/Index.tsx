@@ -30,14 +30,33 @@ const Index = () => {
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="lg:w-1/2 text-center lg:text-left">
               <h1 className="mb-6">
-                <span className="block">AI-Powered</span>
-                <span className="gradient-text">Business Solutions</span>
+                <span className="block">Managed AI Operations:</span>
+                <span className="gradient-text">Your Sovereign Workforce</span>
               </h1>
               
               <p className="text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0">
-                Transform your business with AI receptionists, lead generation, and 
-                productivity tools designed to save time and grow revenue.
+                At AISSC, we don’t just provide software—we deploy fully autonomous, 
+                sovereign AI employees to scale your business operations without the 
+                friction of traditional hiring.
               </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                {[
+                  {
+                    title: "The AI-Native Advantage",
+                    description: "We bridge the gap between legacy workflows and the future of intelligence, deploying specialized, multi-agent teams that make your organization truly AI-native."
+                  },
+                  {
+                    title: "What We Deliver",
+                    description: "Autonomous agent teams, end-to-end infrastructure, proactive reliability, and predictable flat-fee scaling."
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="p-4 bg-white/80 rounded-lg border border-border/60">
+                    <h3 className="text-sm font-semibold mb-1">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 {user ? (
