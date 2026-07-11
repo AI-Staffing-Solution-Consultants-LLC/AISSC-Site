@@ -25,9 +25,11 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between py-4">
         <div className="flex items-center gap-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-gradient-to-br from-brand-500 to-teal-500">
-            <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-xs">AI</div>
-          </div>
+          <img 
+            src={logoAsset.url} 
+            alt="AI Staffing Solution Consultants" 
+            className="h-10 w-auto object-contain"
+          />
           <span className="text-lg font-bold">AI Staffing Solutions</span>
         </div>
         
