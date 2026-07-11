@@ -5,6 +5,7 @@ import TavusVideoWidget from '@/components/TavusVideoWidget';
 import ProductHighlight from '@/components/ProductHighlight';
 import SolutionsGrid from '@/components/SolutionsGrid';
 import TestimonialSection from '@/components/TestimonialSection';
+import logoAsset from '@/assets/ai-staffing-logo.jpg.asset.json';
 import SocialMediaSection from '@/components/SocialMediaSection';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';

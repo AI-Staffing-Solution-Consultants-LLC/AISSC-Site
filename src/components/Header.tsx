@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, User, LogOut } from "lucide-react";
 import { useAuth } from '@/contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
+import logoAsset from '@/assets/ai-staffing-logo.jpg.asset.json';
 import {
   DropdownMenu,
   DropdownMenuContent,
