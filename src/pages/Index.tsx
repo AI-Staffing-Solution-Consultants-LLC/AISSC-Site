@@ -30,6 +30,14 @@ const Index = () => {
         <div className="container relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
             <div className="lg:w-1/2 text-center lg:text-left">
+              <div className="mb-6 flex justify-center lg:justify-start">
+                <img 
+                  src={logoAsset.url} 
+                  alt="AI Staffing Solution Consultants" 
+                  className="h-24 w-auto object-contain rounded-lg"
+                />
+              </div>
+              
               <h1 className="mb-6">
                 <span className="block">Managed AI Operations:</span>
                 <span className="gradient-text">Your Sovereign Workforce</span>
