@@ -30,7 +30,12 @@ const Header = () => {
             alt="AI Staffing Solution Consultants" 
             className="h-10 w-auto object-contain"
           />
-          <span className="text-lg font-bold">AI Staffing Solutions</span>
+          <div className="flex flex-col">
+            <span className="text-lg font-bold leading-tight">AI Staffing Solutions</span>
+            <a href="tel:+1-302-267-4883" className="text-lg md:text-xl font-bold text-brand-600 hover:text-brand-700 leading-tight">
+              +1-302-267-4883
+            </a>
+          </div>
         </div>
         
         <nav className="hidden md:flex items-center gap-6">
