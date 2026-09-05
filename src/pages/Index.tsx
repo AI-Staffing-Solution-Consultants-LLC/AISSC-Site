@@ -5,6 +5,7 @@ import TavusVideoWidget from '@/components/TavusVideoWidget';
 import ProductHighlight from '@/components/ProductHighlight';
 import SolutionsGrid from '@/components/SolutionsGrid';
 import TestimonialSection from '@/components/TestimonialSection';
+import ModularCompanionCatalog from '@/components/ModularCompanionCatalog';
 import logoAsset from '@/assets/ai-staffing-logo.jpg.asset.json';
 import SocialMediaSection from '@/components/SocialMediaSection';
 import Footer from '@/components/Footer';
@@ -138,6 +139,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* Modular Companion Catalog */}
+      <ModularCompanionCatalog />
       
       {/* How It Works Section */}
       <section id="how-it-works" className="py-16">
