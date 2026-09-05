@@ -140,6 +140,9 @@ const Index = () => {
         </div>
       </section>
       
+      {/* Modular Companion Catalog */}
+      <ModularCompanionCatalog />
+      
       {/* How It Works Section */}
       <section id="how-it-works" className="py-16">
         <div className="container">
