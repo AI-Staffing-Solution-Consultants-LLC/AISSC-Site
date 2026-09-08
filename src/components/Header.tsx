@@ -39,9 +39,10 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#products" className="text-sm font-medium hover:text-brand-500 transition-colors">Products</a>
+          <a href="#platform" className="text-sm font-medium hover:text-brand-500 transition-colors">Platform</a>
+          <a href="#about" className="text-sm font-medium hover:text-brand-500 transition-colors">About Us</a>
+          <a href="#investors" className="text-sm font-medium hover:text-brand-500 transition-colors">Investors</a>
           <a href="#how-it-works" className="text-sm font-medium hover:text-brand-500 transition-colors">How It Works</a>
-          <a href="#testimonials" className="text-sm font-medium hover:text-brand-500 transition-colors">Testimonials</a>
           <a href="#contact" className="text-sm font-medium hover:text-brand-500 transition-colors">Contact</a>
         </nav>
         
