@@ -24,6 +24,27 @@ const Index = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
+
+      {/* Facebook Video Post */}
+      <section className="pt-8 pb-4 relative z-10">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-white shadow-sm">
+              <iframe
+                title="AI Staffing Solution Consultants Facebook video"
+                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F14mvUk5MeEN%2F&show_text=true&width=560"
+                width="100%"
+                height="315"
+                style={{ border: 'none', overflow: 'hidden' }}
+                scrolling="no"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Hero Section */}
       <section className="pt-16 pb-24 relative overflow-hidden">
