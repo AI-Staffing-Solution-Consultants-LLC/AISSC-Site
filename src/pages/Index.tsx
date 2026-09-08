@@ -6,6 +6,9 @@ import ProductHighlight from '@/components/ProductHighlight';
 import SolutionsGrid from '@/components/SolutionsGrid';
 import TestimonialSection from '@/components/TestimonialSection';
 import ModularCompanionCatalog from '@/components/ModularCompanionCatalog';
+import ProductEvidence from '@/components/ProductEvidence';
+import AboutSection from '@/components/AboutSection';
+import InvestorAccessSection from '@/components/InvestorAccessSection';
 import logoAsset from '@/assets/ai-staffing-logo.jpg.asset.json';
 import SocialMediaSection from '@/components/SocialMediaSection';
 import Footer from '@/components/Footer';
@@ -142,6 +145,15 @@ const Index = () => {
       
       {/* Modular Companion Catalog */}
       <ModularCompanionCatalog />
+
+      {/* Product Evidence */}
+      <ProductEvidence />
+
+      {/* About Us + Founder */}
+      <AboutSection />
+
+      {/* Investor Access */}
+      <InvestorAccessSection />
       
       {/* How It Works Section */}
       <section id="how-it-works" className="py-16">

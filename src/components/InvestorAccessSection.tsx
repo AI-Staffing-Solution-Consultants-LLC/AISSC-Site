@@ -45,7 +45,7 @@ const InvestorAccessSection = () => {
   }, []);
 
   return (
-    <section id="investors" className="py-20 bg-gradient-to-br from-brand-950 to-teal-900 text-white">
+    <section id="investors" className="py-20 bg-gradient-to-br from-brand-900 to-teal-900 text-white">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-sm mb-6">
