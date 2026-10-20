@@ -20,24 +20,28 @@ import { useNavigate } from 'react-router-dom';
 const Index = () => {
   const { user } = useAuth();
   const navigate = useNavigate();
+  const [autoplay, setAutoplay] = React.useState(false);
+
+  React.useEffect(() => {
+    const t = setTimeout(() => setAutoplay(true), 20000);
+    return () => clearTimeout(t);
+  }, []);
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      {/* Facebook Video Post */}
+      {/* YouTube Playlist */}
       <section className="pt-8 pb-4 relative z-10">
         <div className="container">
           <div className="max-w-3xl mx-auto">
-            <div className="rounded-xl overflow-hidden border border-border/60 bg-white shadow-sm">
+            <div className="rounded-xl overflow-hidden border border-border/60 bg-card shadow-sm aspect-video">
               <iframe
-                title="AI Staffing Solution Consultants Facebook video"
-                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fv%2F14mvUk5MeEN%2F&show_text=true&width=560"
-                width="100%"
-                height="315"
-                style={{ border: 'none', overflow: 'hidden' }}
-                scrolling="no"
-                frameBorder="0"
+                key={autoplay ? 'play' : 'idle'}
+                title="AI Staffing Solution Consultants YouTube playlist"
+                src={`https://www.youtube.com/embed/df_6SuUTFX8?list=PLSRo-qAxxUZg&rel=0${autoplay ? '&autoplay=1&mute=1' : ''}`}
+                className="w-full h-full"
+                style={{ border: 'none' }}
                 allowFullScreen
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
               />
